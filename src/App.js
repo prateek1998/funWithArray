@@ -98,7 +98,7 @@ class App extends React.Component {
           showMode: false,
         });
         break;
-      case "findIndex":
+      case "findindex":
         const { modeValue } = this.state;
         let indexonArr = this.state.resultArray.findIndex((arr) => {
           return arr === modeValue;
