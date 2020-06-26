@@ -5,7 +5,7 @@ function Footer() {
     <footer style={{ marginTop: "3em" }}>
       <p>
         Developed by{" "}
-        <a style={{ color: "#fFC" }} href="https://instagram.com/pratiik_saini">
+        <a style={{ color: "#fFC" }} href="https://github.com/prateek1998/funWithArray">
           pratiiksaini
         </a>
       </p>
