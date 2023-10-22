@@ -12,7 +12,7 @@ class App extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      array: ["React", "ReactNative", "Javascript"],
+      array: ["React", "ReactNative", "Javascript", "TypeScript"],
       resultArray: [],
       concatArray: [],
       resultString: "",
