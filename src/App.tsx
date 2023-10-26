@@ -1,6 +1,6 @@
-import ArrayApp from "components/array-app";
-import Footer from "components/layout/Footer";
-import Header from "components/layout/Header";
+import ArrayApp from 'components/array-app';
+import Footer from 'components/layout/Footer';
+import Header from 'components/layout/Header';
 
 export default function App() {
   return (
@@ -9,5 +9,5 @@ export default function App() {
       <ArrayApp />
       <Footer />
     </div>
-  )
+  );
 }

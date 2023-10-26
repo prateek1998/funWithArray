@@ -6,7 +6,7 @@ import moonIcon from '/assets/icons/moon.svg';
 const ToggleSwitch = () => {
   const { state, dispatch } = useContext(ThemeContext);
   const handler = (color: string) => dispatch({ type: color });
-  
+
   return (
     <div className="transition duration-500 ease-in-out rounded-full p-2">
       {state.themeMode === 'dark' ? (
