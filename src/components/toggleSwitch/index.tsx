@@ -1,20 +1,18 @@
-import { useContext } from 'react';
-import { Types, ThemeContext } from '../../ThemeContext';
 import sunIcon from '/assets/icons/sun.svg';
 import moonIcon from '/assets/icons/moon.svg';
+import { useTheme } from '../../contexts/ui.context';
 
 const ToggleSwitch = () => {
-  const { state, dispatch } = useContext(ThemeContext);
-  const handler = (color: string) => dispatch({ type: color });
+  const { themeMode, lightMode, darkMode } = useTheme();
 
   return (
     <div className="transition duration-500 ease-in-out rounded-full p-2">
-      {state.themeMode === 'dark' ? (
-        <button onClick={() => handler(Types.Light)}>
+      {themeMode === 'dark' ? (
+        <button onClick={lightMode}>
           <img width="42px" src={sunIcon} className="fill-white" alt="sun icon" />
         </button>
       ) : (
-        <button onClick={() => handler(Types.Dark)}>
+        <button onClick={darkMode}>
           <img width="42px" src={moonIcon} alt="moon icon" />
         </button>
       )}
